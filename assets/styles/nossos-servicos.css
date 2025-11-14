@@ -99,3 +99,60 @@
     line-height: 24px;
     margin: 12px;
 }
+
+/* Apoio Psicológico */
+.apoio-psicologico {
+    padding: 24px 32px;
+    background-color: var(--cor-branca);
+    font-family: var(--texto-inter);
+    border-radius: 24px;
+    box-shadow: .5px .5px 2px;
+
+
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.apoio-psicologico-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.apoio-psicologico-imagem {
+    width: 25%;
+    background-color: #ddd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apoio-psicologico h3 {
+    color: var(--cor-texto-verde);
+    font-size: 1.5rem;
+    letter-spacing: 1.27px;
+    font-weight: 600;
+    align-self: center;
+}
+
+.apoio-psicologico p,
+.apoio-psicologico li {
+    color: var(--cor-texto-azul-2);
+    font-size: 1rem;
+    line-height: 24px;
+    letter-spacing: 1.07px;
+}
+
+.apoio-psicologico ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.apoio-psicologico ul li {
+    margin-left: 32px;
+    list-style-type: square;
+}
+
