@@ -86,3 +86,39 @@
     border-radius: 4px;
     border: none;
 }
+
+@media (max-width:768px) {
+    .nossos-voluntarios {
+        padding: 16px;
+    }
+
+    .nossos-voluntarios .voluntarios-content-1 {
+        flex-direction: column;
+    }
+
+    .voluntarios-content-img {
+        height: 300px;
+    }
+
+    .voluntarios-content-texto p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .nossos-voluntarios h2 {
+        font-size: 1.5rem;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .voluntarios-content-2 {
+        padding: 0px;
+    }
+
+    .voluntarios-content-2 p {
+     font-size: .75rem;
+     line-height: 28px;
+     text-align: justify;
+}
+
+}

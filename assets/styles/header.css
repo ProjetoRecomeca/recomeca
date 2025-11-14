@@ -27,3 +27,8 @@
     letter-spacing: 1.27px;
 }
 
+@media (max-width: 768px) {    
+    .cabecalho .navegacao {
+        display: none;
+    }
+}

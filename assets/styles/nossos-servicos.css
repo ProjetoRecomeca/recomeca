@@ -214,7 +214,8 @@
 .workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa .workshops-carreiras-caixa-texto {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
+
 
 }
 
@@ -224,4 +225,63 @@
 
 .workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa:last-child {
     background-color: var(--fundo-6);
+}
+
+/* ------- Reponsividade ------- */
+
+@media (max-width:768px) {
+    .nossos-servicos {
+        padding: 32px 16px;
+        gap: 24px;
+    }
+
+    .nossos-servicos .trilhas-de-conhecimento {
+        padding: 20px 24px
+    }
+
+    .nossos-servicos .trilhas-de-conhecimento .trilhas-textos p,
+    .nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista .trilhas-lista-item .trilhas-item-lista-texto li {
+        text-align: justify;
+    }
+
+
+
+    .nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista .trilhas-lista-item img {
+        display: none;
+    }
+
+
+
+    .nossos-servicos .trilhas-de-conhecimento .trilhas-imagem {
+        display: none;
+    }
+
+    /* Apoio Psicologico */
+    .apoio-psicologico-imagem {
+        display: none;
+    }
+
+    /* Workshops e Carreiras */
+    .workshops-carreiras {
+        padding: 20px 16px;
+    }
+
+    .workshops-carreiras .workshops-carreiras-servicos {
+        padding: 0px;
+    }
+
+    .workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa {
+        padding: 16px;
+    }
+
+    .workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa .workshops-carreiras-caixa-texto h4 {
+        font-size: 1rem;
+    }
+
+    .workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa .workshops-carreiras-caixa-texto p {
+        font-size: .75rem;
+        line-height: 20px;
+    }
+
+
 }
