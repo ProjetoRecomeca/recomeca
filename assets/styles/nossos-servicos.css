@@ -1,0 +1,101 @@
+.nossos-servicos {
+    padding: 48px;
+    background-color: var(--fundo-2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.nossos-servicos h2 {
+    color: var(--cor-texto-azul-2);
+
+    font-size: 2rem;
+    font-family: var(--texto-istok-web);
+    font-weight: 700;
+
+    align-self: center;
+
+}
+
+.nossos-servicos .trilhas-de-conhecimento {
+    padding: 24px 32px;
+    background-color: var(--cor-branca);
+    box-shadow: .5px .5px 2px;
+    border-radius: 24px;
+    display: flex;
+    gap: 48px;
+
+}
+
+.nossos-servicos .trilhas-de-conhecimento .trilhas-imagem {
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nossos-servicos .trilhas-de-conhecimento .trilhas-textos {
+    font-family: var(--texto-inter);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.nossos-servicos .trilhas-de-conhecimento .trilhas-textos h3 {
+    color: var(--cor-texto-verde);
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1.27px;
+    text-align: center;
+
+    align-self: center;
+}
+
+.nossos-servicos .trilhas-de-conhecimento .trilhas-textos p {
+    color: var(--cor-texto-azul-2);
+
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 1.07px;
+
+}
+
+.nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista .trilhas-lista-item {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista .trilhas-lista-item .trilhas-item-lista-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista .trilhas-lista-item .trilhas-item-lista-texto h4 {
+    color: var(--cor-texto-verde);
+    font-size: 1.25rem;
+    letter-spacing: 1.7px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista .trilhas-lista-item .trilhas-item-lista-texto li {
+    list-style-type: square;
+    color: var(--cor-texto-azul-2);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1.07px;
+    line-height: 24px;
+    margin: 12px;
+}
