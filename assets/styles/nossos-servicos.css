@@ -185,6 +185,9 @@
     letter-spacing: 1.07px;
     line-height: 24px;
 }
+.workshops-carreiras .workshops-carreiras-paragrafo {
+    color: var(--cor-texto-azul-2);
+}
 
 .workshops-carreiras .workshops-carreiras-servicos {
     padding: 12px;
