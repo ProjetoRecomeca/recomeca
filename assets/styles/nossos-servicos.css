@@ -156,3 +156,69 @@
     list-style-type: square;
 }
 
+/* Workshops e Carreiras */
+
+.workshops-carreiras {
+    padding: 24px 32px;
+    background-color: var(--cor-branca);
+    font-family: var(--texto-inter);
+    border-radius: 24px;
+    box-shadow: .5px .5px 2px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.workshops-carreiras h3 {
+    color: var(--cor-texto-verde);
+    font-size: 1.5rem;
+    letter-spacing: 1.27px;
+    font-weight: 600;
+    align-self: center;
+    text-align: center;
+    line-height: 36px;
+}
+
+.workshops-carreiras p {
+    font-size: 1rem;
+    letter-spacing: 1.07px;
+    line-height: 24px;
+}
+
+.workshops-carreiras .workshops-carreiras-servicos {
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa {
+    padding: 24px;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa .workshops-carreiras-caixa-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa:nth-child(1) {
+    background-color: var(--fundo-4);
+}
+
+.workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa:last-child {
+    background-color: var(--fundo-6);
+}
