@@ -1,0 +1,29 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 48px;
+}
+
+.cabecalho h1 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    letter-spacing: 1.27px;
+    font-weight: 700;
+    color: var(--cor-texto-azul-2);
+}
+
+.cabecalho .navegacao {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cabecalho .navegacao a {
+    font-family: var(--texto-inter);
+    text-decoration: none;
+    color: var(--cor-texto-azul);
+    font-size: 1rem;
+    letter-spacing: 1.27px;
+}
+
