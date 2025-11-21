@@ -122,3 +122,24 @@ main {
     gap: 8px;
     font-size: .8rem;
 }
+
+/* Login */
+.login-opcoes {
+    width: 100%;
+    max-width: 424px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .85rem;
+    color: var(--fundo-5);
+}
+
+.login-opcoes .lembrar-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.login-opcoes a {
+    font-size: .85rem;
+}
