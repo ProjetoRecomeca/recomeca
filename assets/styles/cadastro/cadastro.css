@@ -1,0 +1,117 @@
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--texto-inter);
+}
+
+
+
+.container-forms {
+    display: flex;
+}
+
+.container-cadastro {
+    width: 494px;
+    background-color: var(--fundo-2);
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Logo presente na div forms */
+
+.logo {
+    color: var(--cor-texto-azul);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1.07px;
+}
+
+.logo img {
+    width: 75px;
+}
+
+
+/* Textos no topo da div de cadastro */
+.cadastro-topo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cadastro-topo .cadastro-titulo {
+    color: var(--cor-texto-azul);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.07px;
+}
+
+.cadastro-topo .cadastro-texto {
+    color: var(--fundo-5);
+    font-size: .87rem;
+    letter-spacing: 1.03px;
+}
+
+/* Tag Forms */
+
+.cadastro-forms {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cadastro-forms .forms-linha {
+    display: flex;
+    gap: 12px;
+
+    & .forms-input {
+        width: 172px;
+    }
+}
+
+.cadastro-forms .forms-input {
+    padding: 12px 16px;
+    border: 1px solid #000;
+    border-radius: 4px;
+
+    width: 390px;
+
+    &::placeholder {
+        font-size: 1rem;
+        color: var(--fundo-5);
+        letter-spacing: 1.07px;
+    }
+}
+
+.cadastro-forms .forms-input.botao-forms {
+    width: 424px;
+    background-color: var(--cor-texto-azul);
+    border: none;
+    color: var(--cor-branca);
+    cursor: pointer;
+
+    font-size: 1rem;
+    letter-spacing: 1.037px;
+    font-weight: 500;
+    
+
+}
+
+.forms-termos {
+    width: 424px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+
+    & label {
+        color: var(--fundo-5);
+    }
+}
