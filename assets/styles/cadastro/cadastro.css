@@ -143,3 +143,89 @@ main {
 .login-opcoes a {
     font-size: .85rem;
 }
+
+/* --- Responsividade --- */
+@media (max-width: 1024px) {
+    .container-forms {
+        width: 80%;
+        margin: 0 auto;
+        max-width: fit-content;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .container-cadastro {
+        padding: 24px;
+        max-width: 420px;
+    }
+
+    .forms-input {
+        padding: 10px 14px;
+        font-size: .95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 90%;
+    }
+
+    .cadastro-titulo {
+        font-size: 1.3rem;
+    }
+
+    .cadastro-texto,
+    .forms-input,
+    .mini-texto-forms {
+        font-size: .8rem;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    .container-cadastro {
+        border-radius: 24px;
+        padding: 16px;
+    }
+
+    .forms-input.botao-forms {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .forms-linha {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .forms-termos {
+        width: 95%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .forms-termos br {
+        display: none;
+    }
+
+    .forms-termos label {
+        font-size: .75rem !important;
+        line-height: 18px !important;
+    }
+
+    .container-forms {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .container-img {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .container-cadastro {
+        width: 85vw;
+    }
+}
