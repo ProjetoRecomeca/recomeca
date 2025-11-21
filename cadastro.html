@@ -8,7 +8,54 @@
     <link rel="shortcut icon" href="./assets/images/logo-recomeça.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
+
 <body>
-    
+
+    <main>
+        <div class="container-forms">
+            <div class="container-img"><img src="./assets/images/estudante.png" alt="Menino Estudando"></div>
+            <div class="container-cadastro">
+                <h2 class="logo"><img src="./assets/images/logo-recomeça.png" alt="letra R personalizada">ecomeça</h2>
+                <div class="cadastro-topo">
+                    <h2 class="cadastro-titulo">Cadastre-se</h2>
+                    <p class="cadastro-texto">Faaç seu cadastro para prosseguir no processo seletivo</p>
+                </div>
+
+
+                <form class="cadastro-forms">
+                    <div class="forms-linha">
+                        <input type="text" name="nome" id="nome" placeholder="Nome" class="forms-input">
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="forms-input">
+                    </div>
+
+                    <input type="date" name="data_nasc" id="data_nasc" placeholder="Data de Nascimento"
+                        class="forms-input">
+
+                    <input type="email" name="email" id="email" placeholder="Email" class="forms-input">
+
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone"
+                        pattern="\(\d{2}\) \d{5}-\d{4}" class="forms-input">
+
+                    <input type="text" name="cpf" id="cpf" placeholder="CPF" class="forms-input">
+
+                    <div class="forms-termos">
+                        <input type="checkbox" name="termos" id="termos">
+
+                        <label for="termos">
+                            Declaro ter lido e concordo com os
+                            <a href="#" class="link-termos">Termos de Uso</a>e a
+                            <a href="#" class="link-termos">Política de Privacidade</a>.
+                        </label>
+                    </div>
+
+                    <input type="submit" value="Cadastrar-se" class="forms-input botao-forms">
+                </form>
+
+                <p class="mini-texto-forms">Já é cadastrado na nossa plataforma? <a href="#">Faça login</a></p>
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>
