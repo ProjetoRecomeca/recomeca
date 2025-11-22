@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #ddd;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    background: #eee;
+    padding: 10px 20px;
+}
+
+.conteudo {
+    padding: 20px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner-caixa {
+    width: 100%;
+    height: 220px;
+    background: #bfbfbf;
+    border-radius: 8px;
+}
+
+.paginacao {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.paginacao span {
+    width: 6px;
+    height: 6px;
+    background: #666;
+    border-radius: 50%;
+}
+
+.cursos h2 {
+    margin-top: 30px;
+}
+
+.lista-cursos {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.curso {
+    width: 180px;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.curso-imagem {
+    background: #a4a4a4;
+    height: 100px;
+}
+
+.curso-info {
+    padding: 10px;
+}
+
+.progresso {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.curso button {
+    margin-top: 8px;
+    width: 100%;
+}
+
+.artigos-instagram {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.artigos {
+    width: 55%;
+}
+
+.instagram {
+    width: 40%;
+}
+
+.instagram-caixa {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background: #b5b5b5;
+    border-radius: 6px;
+}
