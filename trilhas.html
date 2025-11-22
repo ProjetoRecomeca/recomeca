@@ -9,8 +9,6 @@
     <!-- Ajuste o caminho do favicon conforme sua estrutura de pastas -->
     <link rel="shortcut icon" href="./assets/images/logo-recomeça.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/styles.css">
-    <!-- estilos específicos da área do aluno -->
-    <!-- Note que o arquivo aluno.css está dentro de assets/css, portanto utilizamos esse caminho -->
     <link rel="stylesheet" href="./assets/css/trilhas.css">
 </head>
 
@@ -18,7 +16,7 @@
 
 <header>
 
-    <!-- LINHA 1: logo à esquerda / usuário + foto à direita -->
+    
     <div class="navbar-linha1">
         <div class="linha1-esquerda">
             <img src="./assets/images/logo-recomeça.png" alt="Logo Recomeça" class="logo">
@@ -32,13 +30,12 @@
             </div>
 
             <div class="perfil-foto">
-                <!-- depois você pode pôr uma <img> aqui -->
-                <!-- <img src="./assets/images/perfil.jpg" alt="Foto do perfil"> -->
+                
+                 <img src="./assets/images/perfil.jpg" alt="Foto do perfil">
             </div>
         </div>
     </div>
 
-    <!-- LINHA 2: menu à esquerda / busca à direita -->
     <div class="navbar-linha2">
         <nav class="menu">
             <a href="index.html">Início</a>
@@ -61,7 +58,6 @@
 
 <main class="conteudo">
 
-    <!-- ===== BANNER ===== -->
     <section class="banner">
         <div class="banner-slide fade active" style="background-image: url('./assets/images/heroprov1.jpg');">
             <h2>Bem-vindo ao Projeto Recomeça!</h2>
@@ -88,7 +84,6 @@
         </div>
     </section>
 
-    <!-- ===== CURSOS ===== -->
     <section class="cursos">
         <h2 class="cursos-titulo">Continue seus cursos</h2>
 
@@ -169,12 +164,10 @@
         </div>
     </section>
 
-        <!-- ===== O QUE VOCÊ QUER APRENDER ===== -->
 
     <section class="trilhas-explorar">
         <h2 class="trilhas-titulo">O que você quer aprender?</h2>
 
-        <!-- linha com botão Todas as áreas + busca -->
         <div class="trilhas-controles">
             <button class="filtro-principal">
                 Todas as áreas ▾
@@ -187,7 +180,7 @@
         </div>
 
         <div class="trilhas-layout">
-            <!-- COLUNA ESQUERDA: áreas como botões -->
+
             <aside class="trilhas-areas">
                 <button class="area-btn">
                     <img src="./assets/images/Vector.png" alt="">
@@ -219,7 +212,6 @@
                 </button>
             </aside>
 
-            <!-- GRADE DE CARTÕES DE TRILHA -->
             <div class="trilhas-grid">
 
                 <article class="trilha-card">
@@ -239,7 +231,6 @@
                     <button class="trilha-open">⟶</button>
                 </article>
 
-                <!-- copie esse card quantas vezes quiser -->
                 <article class="trilha-card">
                     <div class="trilha-thumb">
                         <img src="./assets/images/estudante.png" alt="Miniatura do curso">
@@ -325,8 +316,6 @@
                     <button class="trilha-open">⟶</button>
                 </article>
 
-                <!-- ... demais cards ... -->
-
             </div>
         </div>
     </section>
@@ -334,7 +323,6 @@
 
 </main>
 
-<!-- ===== SCRIPT DO BANNER ===== -->
 <script>
 let slideIndex = 0;
 const slides = document.querySelectorAll(".banner-slide");
