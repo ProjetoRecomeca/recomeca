@@ -49,6 +49,12 @@ header {
     gap: 16px;
 }
 
+.linha1-direita .config {
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-weight: 500;
+}
+
 .perfil-foto {
     width: 60px;
     height: 60px;
