@@ -20,6 +20,45 @@ function criarCabecalho(header) {
                 </nav>
             `;
     }
+
+    else if (header.classList.contains('cabecalho-aluno')) {
+        header.innerHTML = `
+    <div class="navbar-linha1">
+        <div class="linha1-esquerda">
+            <img src="./assets/images/logo-recomeça.png" alt="Logo Recomeça" class="logo">
+            <h1>Projeto Recomeça</h1>
+        </div>
+
+        <div class="linha1-direita">
+            <div class="perfil-textos">
+                <span class="user-name">Nome do Usuário</span>
+                <a href="#" class="config">Configuração ⚙</a>
+            </div>
+
+            <div class="perfil-foto">
+               <img src="./assets/images/perfil.jpg" alt="Foto do perfil">
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="navbar-linha2">
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="aluno.html">Aluno</a>
+            <a href="trilhas.html">Trilhas</a>
+            <a href="#">Workshop</a>
+            <a href="#">Apoio Psicológico</a>
+        </nav>
+
+        <div class="search-wrapper">
+            <div class="search-box">
+                <input type="text" placeholder="Digite sua busca">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+    </div>`
+    }
 }
 
 criarCabecalho(header);
