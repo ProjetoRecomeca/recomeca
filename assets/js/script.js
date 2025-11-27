@@ -1,4 +1,5 @@
 const header = document.getElementById('header');
+const rodape = document.getElementById('rodape');
 
 function criarCabecalho(header) {
     console.log(header)
@@ -57,9 +58,32 @@ function criarCabecalho(header) {
                 <button class="search-btn">🔍</button>
             </div>
         </div>
-    </div>`
+    </div>
+    
+    `
     }
 }
 
+function criarRodape(rodape) {
+    rodape.innerHTML = `
+        <div class="rodape-logo">
+                <img src="./assets/images/logo-clara.png" alt="Logo Recomeça Branca" class="logo-rodape">
+                <h3>projeto</h3>
+                <h2>Recomeça</h2>
+                <p>O caminho para uma nova história</p>
+        </div>
+
+            <div class="rodape-contatos">
+                <h4>Nossos Contatos</h4>
+                <ul>
+                    <li><img src="./assets/images/github-icon.png" alt="Ícone do Github "></li>
+                    <li><img src="./assets/images/youtube-icon.png" alt="Ícone do Youtube"></li>
+                    <li><img src="./assets/images/instagram-icon.png" alt="Ícone do Instagram"></li>
+                </ul>
+        </div>
+    `
+}
+
 criarCabecalho(header);
+criarRodape(rodape);
 
