@@ -1,33 +1,109 @@
-.cabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 48px;
+body {
+    background-color: #ddd;
 }
 
-.cabecalho h1 {
+.cabecalho {
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: calc(100% - 24px);
+
+    margin: 24px;
+}
+
+.cabecalho div {
+    width: fit-content;
+
+    background-color: var(--cor-branca);
+    font-family: var(--texto-inter);
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 4px;
+    padding: 12px 8px;
+}
+
+.cabecalho div h2 {
     font-size: 2rem;
-    letter-spacing: 1.27px;
     font-weight: 700;
-    color: var(--cor-texto-azul-2);
+    letter-spacing: 1.7px;
+}
+
+.cabecalho div h3 {
+    margin-top: 16px;
+    font-size: 1rem;
+    color: var(--preto);
+    letter-spacing: 7px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+.cabecalho div p {
+    line-height: 16px;
+    letter-spacing: 1.07px;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.cabecalho div img {
+    width: 160px;
+    height: 100px;
 }
 
 .cabecalho .navegacao {
     display: flex;
-    gap: 1.5rem;
+    background-color: var(--cor-texto-azul);
+    align-items: center;
 }
 
 .cabecalho .navegacao a {
+    padding: 24px 32px;
+
+    text-transform: uppercase;
     font-family: var(--texto-inter);
     text-decoration: none;
-    color: var(--cor-texto-azul);
+    color: var(--cor-branca);
     font-size: 1rem;
     letter-spacing: 1.27px;
+
+    &.amarelo {
+        background-color: var(--amarelo);
+    }
 }
 
-@media (max-width: 768px) {    
+
+@media (max-width: 1340px) {
+    .cabecalho .navegacao a {
+        font-size: .75rem;
+        padding: 20px 28px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        margin: 12px;
+    }
+
+    .cabecalho div h2 {
+        font-size: 1.75rem;
+    }
+
+    .cabecalho div img {
+        width: 130px;
+        height: 70px;
+    }
+
+    .cabecalho .navegacao a {
+        padding: 16px;
+        font-size: .75rem;
+        line-height: 16px;
+
+    }
+}
+
+@media (max-width: 768px) {
     .cabecalho .navegacao {
         display: none;
     }
