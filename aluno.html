@@ -1,209 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área do Aluno - Recomeça</title>
 
     <link rel="shortcut icon" href="./assets/images/logo-recomeça.png" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./assets/styles/aluno/aluno.css">
 </head>
 
 <body>
 
-<header>
-
-    <div class="navbar-linha1">
-        <div class="linha1-esquerda">
-            <img src="./assets/images/logo-recomeça.png" alt="Logo Recomeça" class="logo">
-            <h1>Projeto Recomeça</h1>
-        </div>
-
-        <div class="linha1-direita">
-            <div class="perfil-textos">
-                <span class="user-name">Nome do Usuário</span>
-                <a href="#" class="config">Configuração ⚙</a>
+    <header class="cabecalho-aluno">
+        <div class="navbar-linha1">
+            <div class="linha1-esquerda">
+                <img src="./assets/images/logo-recomeça.png" alt="Logo Recomeça" class="logo">
+                <h1>Projeto Recomeça</h1>
             </div>
 
-            <div class="perfil-foto">
-               <img src="./assets/images/perfil.jpg" alt="Foto do perfil">
-            </div>
-        </div>
-    </div>
-
-    
-    <div class="navbar-linha2">
-        <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="aluno.html">Aluno</a>
-            <a href="trilhas.html">Trilhas</a>
-            <a href="#">Workshop</a>
-            <a href="#">Apoio Psicológico</a>
-        </nav>
-
-        <div class="search-wrapper">
-            <div class="search-box">
-                <input type="text" placeholder="Digite sua busca">
-                <button class="search-btn">🔍</button>
-            </div>
-        </div>
-    </div>
-
-</header>
-
-
-<main class="conteudo">
-
-    <section class="banner">
-        <div class="banner-slide fade active" style="background-image: url('./assets/images/hero1.jpg');">
-            <h2>Bem-vindo ao Projeto Recomeça!</h2>
-            <p>Continue seus cursos e explore novos conhecimentos.</p>
-            <button>Acessar cursos</button>
-        </div>
-
-        <div class="banner-slide fade" style="background-image: url('./assets/images/hero2.jpg');">
-            <h2>Explore novas trilhas</h2>
-            <p>Descubra conteúdos e workshops que vão te ajudar a crescer.</p>
-            <button>Ver trilhas</button>
-        </div>
-
-        <div class="banner-slide fade" style="background-image: url('./assets/images/hero3.jpg');">
-            <h2>Apoio psicológico</h2>
-            <p>Estamos aqui para te apoiar em todos os momentos.</p>
-            <button>Conhecer</button>
-        </div>
-
-        <div class="paginacao">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </section>
-
-    <section class="cursos">
-        <h2 class="cursos-titulo">Continue seus cursos</h2>
-
-        <div class="lista-cursos">
-
-            <article class="curso-card">
-                <div class="curso-thumb">
-                    <div class="curso-progress">
-                        <span class="curso-progress-text">0%</span>
-                        <div class="curso-progress-bar">
-                            <div class="curso-progress-fill" style="width: 0%;"></div>
-                        </div>
-                    </div>
+            <div class="linha1-direita">
+                <div class="perfil-textos">
+                    <span class="user-name">Nome do Usuário</span>
+                    <a href="#" class="config">Configuração ⚙</a>
                 </div>
 
-                <div class="curso-body">
-                    <h3 class="curso-nome">Título do Curso</h3>
-                    <p class="curso-nivel-label">Nível:</p>
-                    <p class="curso-descricao">Descrição do curso</p>
-                    <button class="curso-btn">Acessar</button>
+                <div class="perfil-foto">
+                    <img src="./assets/images/perfil.jpg" alt="Foto do perfil">
                 </div>
-            </article>
-
-            <article class="curso-card">
-                <div class="curso-thumb">
-                    <div class="curso-progress">
-                        <span class="curso-progress-text">0%</span>
-                        <div class="curso-progress-bar">
-                            <div class="curso-progress-fill" style="width: 0%;"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="curso-body">
-                    <h3 class="curso-nome">Título do Curso</h3>
-                    <p class="curso-nivel-label">Nível:</p>
-                    <p class="curso-descricao">Descrição do curso</p>
-                    <button class="curso-btn">Acessar</button>
-                </div>
-            </article>
-
-            <article class="curso-card">
-                <div class="curso-thumb">
-                    <div class="curso-progress">
-                        <span class="curso-progress-text">0%</span>
-                        <div class="curso-progress-bar">
-                            <div class="curso-progress-fill" style="width: 0%;"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="curso-body">
-                    <h3 class="curso-nome">Título do Curso</h3>
-                    <p class="curso-nivel-label">Nível:</p>
-                    <p class="curso-descricao">Descrição do curso</p>
-                    <button class="curso-btn">Acessar</button>
-                </div>
-            </article>
-
-            <article class="curso-card">
-                <div class="curso-thumb">
-                    <div class="curso-progress">
-                        <span class="curso-progress-text">0%</span>
-                        <div class="curso-progress-bar">
-                            <div class="curso-progress-fill" style="width: 0%;"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="curso-body">
-                    <h3 class="curso-nome">Título do Curso</h3>
-                    <p class="curso-nivel-label">Nível:</p>
-                    <p class="curso-descricao">Descrição do curso</p>
-                    <button class="curso-btn">Acessar</button>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-    <section class="artigos-instagram">
-        <div class="artigos">
-            <h2>Alguns artigos</h2>
-            <div class="artigos-caixa">
             </div>
         </div>
 
-        <div class="instagram">
-            <h2>Nosso Instagram</h2>
-            <a href="#" class="instagram-caixa">
-            </a>
+
+        <div class="navbar-linha2">
+            <nav class="menu">
+                <a href="index.html">Início</a>
+                <a href="aluno.html">Aluno</a>
+                <a href="trilhas.html">Trilhas</a>
+                <a href="#">Workshop</a>
+                <a href="#">Apoio Psicológico</a>
+            </nav>
+
+            <div class="search-wrapper">
+                <div class="search-box">
+                    <input type="text" placeholder="Digite sua busca">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
         </div>
-    </section>
+    </header>
 
-</main>
 
-<script>
-let slideIndex = 0;
-const slides = document.querySelectorAll(".banner-slide");
-const dots = document.querySelectorAll(".paginacao .dot");
+    <main class="conteudo">
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
-        dots[i].classList.toggle("active", i === index);
-    });
-}
+        <section class="banner">
+            <div class="banner-slide fade active"
+                style="background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p2/44836205-encontro-e-cumprimento-conceito-dois-confiante-o-negocio-aperto-de-mao-e-o-negocio-pessoas-depois-de-discutindo-boa-acordo-do-negociacao-contrato-e-novo-projetos-para-ambos-empresas-sucesso-parceria-co-trabalhador-gratis-foto.JPG');">
+                <h2>Bem-vindo ao Projeto Recomeça!</h2>
+                <p>Continue seus cursos e explore novos conhecimentos.</p>
+                <button>Acessar cursos</button>
+            </div>
 
-function nextSlide() {
-    slideIndex = (slideIndex + 1) % slides.length;
-    showSlide(slideIndex);
-}
+            <div class="banner-slide fade"
+                style="background-image: url('https://plus.unsplash.com/premium_photo-1685287730766-2afe31432da5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <h2>Explore novas trilhas</h2>
+                <p>Descubra conteúdos e workshops que vão te ajudar a crescer.</p>
+                <button>Ver trilhas</button>
+            </div>
 
-showSlide(slideIndex);
-setInterval(nextSlide, 5000);
+            <div class="banner-slide fade"
+                style="background-image: url('https://blog.kompa.com.br/wp-content/uploads/2018/12/mulher-em-uma-consulta-com-psicologo-scaled.jpg');">
+                <h2>Apoio psicológico</h2>
+                <p>Estamos aqui para te apoiar em todos os momentos.</p>
+                <button>Conhecer</button>
+            </div>
 
-dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => {
-        slideIndex = i;
+            <div class="paginacao">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section class="cursos">
+            <h2 class="cursos-titulo">Continue seus cursos</h2>
+
+            <div class="lista-cursos">
+
+                <article class="curso-card">
+                    <div class="curso-thumb">
+                        <div class="curso-progress">
+                            <span class="curso-progress-text">0%</span>
+                            <div class="curso-progress-bar">
+                                <div class="curso-progress-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="curso-body">
+                        <h3 class="curso-nome">Título do Curso</h3>
+                        <p class="curso-nivel-label">Nível:</p>
+                        <p class="curso-descricao">Descrição do curso</p>
+                        <button class="curso-btn">Acessar</button>
+                    </div>
+                </article>
+
+                <article class="curso-card">
+                    <div class="curso-thumb">
+                        <div class="curso-progress">
+                            <span class="curso-progress-text">0%</span>
+                            <div class="curso-progress-bar">
+                                <div class="curso-progress-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="curso-body">
+                        <h3 class="curso-nome">Título do Curso</h3>
+                        <p class="curso-nivel-label">Nível:</p>
+                        <p class="curso-descricao">Descrição do curso</p>
+                        <button class="curso-btn">Acessar</button>
+                    </div>
+                </article>
+
+                <article class="curso-card">
+                    <div class="curso-thumb">
+                        <div class="curso-progress">
+                            <span class="curso-progress-text">0%</span>
+                            <div class="curso-progress-bar">
+                                <div class="curso-progress-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="curso-body">
+                        <h3 class="curso-nome">Título do Curso</h3>
+                        <p class="curso-nivel-label">Nível:</p>
+                        <p class="curso-descricao">Descrição do curso</p>
+                        <button class="curso-btn">Acessar</button>
+                    </div>
+                </article>
+
+                <article class="curso-card">
+                    <div class="curso-thumb">
+                        <div class="curso-progress">
+                            <span class="curso-progress-text">0%</span>
+                            <div class="curso-progress-bar">
+                                <div class="curso-progress-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="curso-body">
+                        <h3 class="curso-nome">Título do Curso</h3>
+                        <p class="curso-nivel-label">Nível:</p>
+                        <p class="curso-descricao">Descrição do curso</p>
+                        <button class="curso-btn">Acessar</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="artigos-instagram">
+            <div class="artigos">
+                <h2>Alguns artigos</h2>
+                <div class="artigos-caixa">
+                </div>
+            </div>
+
+            <div class="instagram">
+                <h2>Nosso Instagram</h2>
+                <a href="#" class="instagram-caixa">
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./assets/js/script.js">
+    </script>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".banner-slide");
+        const dots = document.querySelectorAll(".paginacao .dot");
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === index);
+                dots[i].classList.toggle("active", i === index);
+            });
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+        }
+
         showSlide(slideIndex);
-    });
-});
-</script>
+        setInterval(nextSlide, 5000);
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener("click", () => {
+                slideIndex = i;
+                showSlide(slideIndex);
+            });
+        });
+    </script>
 
 </body>
+
 </html>

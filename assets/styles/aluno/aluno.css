@@ -1,10 +1,11 @@
 @import url('../../styles/reset.css');
 @import url('../../styles/components.css');
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    
+
 }
 
 body {
@@ -15,12 +16,13 @@ body {
 
 header {
     width: 100%;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    color: #fff;
     margin-bottom: 16px;
 }
 
 .navbar-linha1 {
-    background-color: #cfcfcf;
+    background-color: var(--cor-texto-azul-2);
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -73,6 +75,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    gap: 7px;
     font-family: var(--texto-inter);
 }
 
@@ -83,12 +86,11 @@ header {
 
 .perfil-textos .config {
     font-size: 0.75rem;
-    color: #666;
     text-decoration: none;
 }
 
 .navbar-linha2 {
-    background-color: #b3aeae;
+    background-color: #FED096;
     padding: 8px 40px;
     display: flex;
     justify-content: space-between;
@@ -101,7 +103,7 @@ header {
 }
 
 .navbar-linha2 .menu a {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-decoration: none;
     color: #111;
 }
@@ -148,10 +150,10 @@ header {
 .banner {
     position: relative;
     width: 100%;
-    height: 220px;
+    height: 460px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #ddd; 
+    background-color: #ddd;
     margin-bottom: 24px;
 }
 
@@ -175,7 +177,7 @@ header {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
     z-index: 0;
 }
 
@@ -225,7 +227,7 @@ header {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
 
@@ -263,7 +265,7 @@ header {
 }
 
 .cursos-titulo {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -327,7 +329,7 @@ header {
 
 .curso-thumb {
     background-color: #787878;
-    height: 110px;
+    height: 140px;
     position: relative;
 }
 
@@ -369,7 +371,7 @@ header {
 .curso-nome {
     font-size: 0.85rem;
     font-weight: 700;
-    color: #00424f; 
+    color: #00424f;
 }
 
 .curso-nivel-label {
@@ -389,7 +391,7 @@ header {
     font-size: 0.75rem;
     border: none;
     border-radius: 4px;
-    background-color: #333;
+    background-color: var(--amarelo);
     color: #ffffff;
     cursor: pointer;
 }
@@ -421,71 +423,16 @@ header {
 .instagram-caixa {
     display: block;
     width: 100%;
-    height: 280px;
+    height: 770px;
     border-radius: 8px;
-    background-color: #e0e0e0;
+    background-color: var(--cor-texto-azul-2);
 }
-
-@media (max-width: 900px) {
-    .lista-cursos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .artigos-instagram {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar-linha2 {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-
-    .search-box {
-        width: 100%;
-    }
-
-    .search-box input {
-        flex: 1;
-        width: 100%;
-    }
-
-    .banner {
-        height: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    .lista-cursos {
-        grid-template-columns: 1fr;
-    }
-
-    .conteudo {
-        padding: 12px;
-    }
-}
-
-@media (max-width: 900px) {
-    .lista-cursos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 600px) {
-    .lista-cursos {
-        grid-template-columns: 1fr;
-    }
-}
-
-
 
 .perfil-foto {
     width: 80px;
     height: 80px;
-    background-color: #d9d9d9; 
-    border-radius: 6px;        
+    background-color: #d9d9d9;
+    border-radius: 6px;
 }
 
 .perfil-foto img {
@@ -507,10 +454,88 @@ header {
     font-weight: 600;
 }
 
-.perfil-textos .config {
-    font-size: 0.75rem;
-    color: #666;
-    text-decoration: none;
+.perfil-foto {
+    width: 60px;
+    height: 60px;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+}
+
+.perfil-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.search-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+@media (max-width: 900px) {
+    .lista-cursos {
+        grid-template-columns: repeat(2, minmax(0, .5fr));
+    }
+
+    .artigos-instagram {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-linha2 {
+        padding: 24px 12px 12px 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .navbar-linha2 .menu {
+        gap: 12px;
+        justify-content: center;
+    }
+
+
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box input {
+        flex: 1;
+        width: 100%;
+    }
+
+
+}
+
+.perfil-foto {
+    width: 80px;
+    height: 80px;
+    background-color: #d9d9d9;
+    border-radius: 6px;
+}
+
+.perfil-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.perfil-textos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: var(--texto-inter);
+}
+
+.perfil-textos .user-name {
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .perfil-foto {
@@ -531,4 +556,64 @@ header {
     display: flex;
     justify-content: flex-end;
     flex: 1;
+}
+
+@media (max-width: 900px) {
+    .lista-cursos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-linha1 {
+        padding: 16px;
+    }
+
+    .lista-cursos {
+        margin-top: 32px;
+        grid-template-columns: .60fr;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .navbar-linha2 {
+        padding: 24px 10px 16px 10px;
+    }
+
+    .perfil-textos {
+        display: none;
+    }
+
+
+    .navbar-linha2 .menu {
+        gap: 10px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-linha2 .menu a {
+        font-size: .75rem;
+    }
+
+    .lista-cursos {
+        grid-template-columns: .85fr;
+    }
+
+    .conteudo {
+        padding: 8px;
+    }
+}
+
+@media (min-width:1440px) {
+    .curso-card {
+        width: 360px;
+    }
+
+    .lista-cursos {
+        display: flex;
+        gap: 32px;
+    }
 }
