@@ -36,7 +36,7 @@ function criarCabecalho(header) {
                 <a href="#" class="config">Configuração ⚙</a>
             </div>
 
-            <div class="perfil-foto">
+            <div class="perfil-foto" id="pessoabtn">
                <img src="./assets/images/perfil.jpg" alt="Foto do perfil">
             </div>
         </div>
@@ -86,4 +86,10 @@ function criarRodape(rodape) {
 
 criarCabecalho(header);
 criarRodape(rodape);
+
+const imgPesosa = document.getElementById("pessoabtn")
+
+imgPesosa.addEventListener('click', () => {
+    alert("Você clicou na imagem")
+})
 
