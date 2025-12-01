@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('./components/reset.css');
+@import url('./components/header.css');
+@import url('./components/banner.css');
+@import url('./components/rodape.css');
+
 :root {
     --fundo-1: #EEEEEE;
     --fundo-2: #F8F8F8;
@@ -20,4 +25,6 @@
     --texto-montserrat: "Montserrat", sans-serif;
     --texto-istok-web: "Istok Web", sans-serif;
 }
+
+
 
