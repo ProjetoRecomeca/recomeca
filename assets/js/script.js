@@ -47,8 +47,8 @@ function criarCabecalho(header) {
         <nav class="menu" id="navegacao">
             <a href="aluno.html">Início</a>
             <a href="trilhas.html">Trilhas</a>
-            <a href="#">Workshop</a>
-            <a href="#">Apoio Psicológico</a>
+            <a href="workshop.html">Workshop</a>
+            <a href="apoio.html">Apoio Psicológico</a>
         </nav>
 
         <div class="search-wrapper">
