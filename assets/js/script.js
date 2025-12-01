@@ -26,7 +26,7 @@ function criarCabecalho(header) {
         header.innerHTML = `
     <div class="navbar-linha1">
         <div class="linha1-esquerda">
-            <img src="./assets/images/logo-recomeça.png" alt="Logo Recomeça" class="logo">
+            <img src="./assets/images/logo-clara.png" alt="Logo Recomeça" class="logo">
             <h1>Projeto Recomeça</h1>
         </div>
 
