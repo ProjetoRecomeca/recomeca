@@ -44,9 +44,8 @@ function criarCabecalho(header) {
 
     
     <div class="navbar-linha2">
-        <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="aluno.html">Aluno</a>
+        <nav class="menu" id="navegacao">
+            <a href="aluno.html">Início</a>
             <a href="trilhas.html">Trilhas</a>
             <a href="#">Workshop</a>
             <a href="#">Apoio Psicológico</a>
@@ -61,6 +60,34 @@ function criarCabecalho(header) {
     </div>
     
     `
+    }
+
+    const navegacao = document.getElementById('navegacao');
+
+    if (header.classList.contains('1') ||
+        header.classList.contains('2') ||
+        header.classList.contains('3') ||
+        header.classList.contains('4')) {
+
+        const filhos = navegacao.children;
+
+        switch (true) {
+            case header.classList.contains('1'):
+                filhos[0].style.fontWeight = '700';
+                break;
+
+            case header.classList.contains('2'):
+                filhos[1].style.fontWeight = '700';
+                break;
+
+            case header.classList.contains('3'):
+                filhos[2].style.fontWeight = '700';
+                break;
+
+            case header.classList.contains('4'):
+                filhos[3].style.fontWeight = '700';
+                break;
+        }
     }
 }
 
