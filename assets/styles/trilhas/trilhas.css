@@ -1,6 +1,7 @@
 @import url('../../styles/components.css');
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -104,24 +105,24 @@ body {
 
 .trilhas-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 380px));
+    gap: 12px;
 }
 
 .trilha-card {
     background-color: #ffffff;
     border-radius: 10px;
     border: 1px solid #d0d0d0;
-    padding: 10px;
+    padding: 12px;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    gap: 10px;
+    gap: 16px;
     align-items: center;
 }
 
 .trilha-thumb {
-    width: 48px;
-    height: 48px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     overflow: hidden;
     background-color: #333;
@@ -140,31 +141,36 @@ body {
 }
 
 .trilha-nome {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #00424f;
 }
 
 .trilha-meta {
-    font-size: 0.7rem;
-    color: #555;
+
+    text-align: justify;
+    font-size: 0.8rem;
+    color: var(--cor-texto-azul);
     line-height: 1.2;
 }
 
 .trilha-extra {
+    margin-top: 8px;
     display: flex;
+    align-items: start;
     gap: 12px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .trilha-open {
-    border-radius: 50%;
-    border: 1px solid #00424f;
-    width: 24px;
-    height: 24px;
-    font-size: 0.9rem;
+    border: none;
     background: transparent;
     cursor: pointer;
+
+    & img {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 @media (max-width: 900px) {
