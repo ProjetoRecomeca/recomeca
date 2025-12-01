@@ -1,8 +1,4 @@
-@import url('../../styles/reset.css');
 @import url('../../styles/components.css');
-@import url('../../styles/header.css');
-@import url('../../styles/banner.css');
-@import url('../../styles/rodape.css');
 
 html,
 body {
@@ -18,11 +14,6 @@ body {
 
 .conteudo {
     padding: 16px;
-}
-
-/* Cursos */
-.cursos {
-    padding: 16px 24px;
 }
 
 .cursos-topo {
@@ -42,12 +33,6 @@ body {
     background: transparent;
     font-size: 1.3rem;
     cursor: pointer;
-}
-
-.lista-cursos {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 10px;
 }
 
 .curso {
@@ -98,91 +83,9 @@ body {
     cursor: pointer;
 }
 
-/* Cards */
-.curso-card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    border: 1px solid #d0d0d0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
 
-.curso-thumb {
-    background-color: #787878;
-    height: 140px;
-    position: relative;
-}
-
-.curso-progress {
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 8px;
-    font-size: 0.7rem;
-    color: #ffffff;
-}
-
-.curso-progress-text {
-    display: block;
-    margin-bottom: 4px;
-}
-
-.curso-progress-bar {
-    width: 100%;
-    height: 4px;
-    background-color: #e0e0e0;
-    border-radius: 999px;
-    overflow: hidden;
-}
-
-.curso-progress-fill {
-    height: 100%;
-    background-color: #ffffff;
-    border-radius: 999px;
-}
-
-.curso-body {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.curso-nome {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: #00424f;
-}
-
-.curso-nivel-label {
-    font-size: 0.75rem;
-    font-weight: 600;
-}
-
-.curso-descricao {
-    font-size: 0.7rem;
-    color: #555;
-}
-
-.curso-btn {
-    margin-top: 8px;
-    align-self: flex-start;
-    padding: 6px 16px;
-    font-size: 0.75rem;
-    border: none;
-    border-radius: 4px;
-    background-color: var(--amarelo);
-    color: #ffffff;
-    cursor: pointer;
-}
-
-.curso-btn:hover {
-    opacity: 0.9;
-}
-
-/* Instagram / artigos */
 .artigos-instagram {
+    margin-top: 24px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 16px;
@@ -238,44 +141,24 @@ body {
     border-radius: 4px;
 }
 
-/* RESPONSIVIDADE */
 
 @media (max-width: 900px) {
-    .lista-cursos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     .artigos-instagram {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 600px) {
-    .navbar-linha1 { padding: 16px; }
-    .lista-cursos {
-        margin-top: 32px;
-        grid-template-columns: .60fr;
-        justify-content: center;
+    .conteudo {
+        padding: 8px;
     }
 }
 
 @media (max-width: 480px) {
-    .lista-cursos {
-        grid-template-columns: .85fr;
-    }
-
     .conteudo {
         padding: 8px;
     }
 }
 
 @media (min-width: 1440px) {
-    .curso-card {
-        width: 360px;
-    }
-
-    .lista-cursos {
-        display: flex;
-        gap: 32px;
-    }
 }

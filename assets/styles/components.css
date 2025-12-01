@@ -4,6 +4,7 @@
 @import url('./components/header.css');
 @import url('./components/banner.css');
 @import url('./components/rodape.css');
+@import url('./components/cardsCursosAcessados.css');
 
 :root {
     --fundo-1: #EEEEEE;
