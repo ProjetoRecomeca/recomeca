@@ -1,12 +1,12 @@
 @import url('../../styles/reset.css');
 @import url('../../styles/components.css');
+@import url('../../styles/header.css');
 @import url('../../styles/rodape.css');
 
 html,
 body {
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -15,134 +15,6 @@ body {
     font-family: var(--texto-inter);
 }
 
-header {
-    width: 100%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    color: #fff;
-    margin-bottom: 16px;
-}
-
-.navbar-linha1 {
-    background-color: var(--cor-texto-azul-2);
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.linha1-esquerda {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.linha1-esquerda .logo {
-    width: 48px;
-    height: auto;
-}
-
-.linha1-esquerda h1 {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.linha1-direita {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.linha1-direita .config {
-    text-decoration: none;
-    color: var(--cor-branca);
-    font-weight: 500;
-}
-
-.perfil-foto {
-    width: 60px;
-    height: 60px;
-    background-color: #dcdcdc;
-    border-radius: 4px;
-}
-
-.perfil-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.perfil-textos {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 7px;
-    font-family: var(--texto-inter);
-}
-
-.perfil-textos .user-name {
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.perfil-textos .config {
-    font-size: 0.75rem;
-    text-decoration: none;
-}
-
-.navbar-linha2 {
-    background-color: #FED096;
-    padding: 8px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar-linha2 .menu {
-    display: flex;
-    gap: 16px;
-}
-
-.navbar-linha2 .menu a {
-    font-size: 1rem;
-    text-decoration: none;
-    color: #111;
-}
-
-.navbar-linha2 .menu a:hover {
-    text-decoration: underline;
-}
-
-.search-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-}
-
-.search-box {
-    display: flex;
-    align-items: center;
-    background-color: #d9d9d9;
-    border-radius: 999px;
-    border: 1px solid #555;
-    padding: 4px 12px;
-    gap: 6px;
-}
-
-.search-box input {
-    border: none;
-    background: transparent;
-    outline: none;
-    font-size: 0.8rem;
-}
-
-.search-box .search-btn {
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    font-size: 0.9rem;
-    padding: 0;
-}
 
 .conteudo {
     padding: 16px;
@@ -214,6 +86,7 @@ header {
     cursor: pointer;
 }
 
+/* Paginação banner */
 .paginacao {
     position: absolute;
     bottom: 10px;
@@ -236,6 +109,7 @@ header {
     background-color: #fff;
 }
 
+/* Cursos */
 .cursos {
     padding: 16px 24px;
 }
@@ -263,12 +137,6 @@ header {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 10px;
-}
-
-.cursos-titulo {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 10px;
 }
 
 .curso {
@@ -319,6 +187,7 @@ header {
     cursor: pointer;
 }
 
+/* Cards */
 .curso-card {
     background-color: #ffffff;
     border-radius: 8px;
@@ -401,6 +270,7 @@ header {
     opacity: 0.9;
 }
 
+/* Instagram / artigos */
 .artigos-instagram {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -429,55 +299,39 @@ header {
     background-color: var(--cor-texto-azul-2);
 }
 
-.perfil-foto {
-    width: 80px;
-    height: 80px;
-    background-color: #d9d9d9;
-    border-radius: 6px;
+/* Card pessoa */
+.card-pessoa {
+    padding: 12px 24px;
+    width: 320px;
+    background-color: var(--amarelo);
 }
 
-.perfil-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-.perfil-textos {
+.card-pessoa-header {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-family: var(--texto-inter);
+    justify-content: space-between;
 }
 
-.perfil-textos .user-name {
-    font-size: 0.9rem;
-    font-weight: 600;
+.card-botao {
+    background-color: transparent;
+    color: var(--cor-branca);
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
 }
 
-.perfil-foto {
-    width: 60px;
-    height: 60px;
-    background-color: #dcdcdc;
+.card-botao.sair {
+    background-color: rgb(158, 15, 15);
+    letter-spacing: 1.03px;
+    padding: 4px 16px;
+    text-transform: capitalize;
     border-radius: 4px;
 }
 
-.perfil-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.search-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-}
+/* RESPONSIVIDADE */
 
 @media (max-width: 900px) {
     .lista-cursos {
-        grid-template-columns: repeat(2, minmax(0, .5fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .artigos-instagram {
@@ -485,120 +339,16 @@ header {
     }
 }
 
-@media (max-width: 768px) {
-    .navbar-linha2 {
-        padding: 24px 12px 12px 12px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-    }
-
-    .navbar-linha2 .menu {
-        gap: 12px;
-        justify-content: center;
-    }
-
-
-
-    .search-box {
-        width: 100%;
-    }
-
-    .search-box input {
-        flex: 1;
-        width: 100%;
-    }
-
-
-}
-
-.perfil-foto {
-    width: 80px;
-    height: 80px;
-    background-color: #d9d9d9;
-    border-radius: 6px;
-}
-
-.perfil-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-.perfil-textos {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-family: var(--texto-inter);
-}
-
-.perfil-textos .user-name {
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.perfil-foto {
-    width: 60px;
-    height: 60px;
-    background-color: #dcdcdc;
-    border-radius: 4px;
-}
-
-.perfil-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.search-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-}
-
-@media (max-width: 900px) {
-    .lista-cursos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
 @media (max-width: 600px) {
-    .navbar-linha1 {
-        padding: 16px;
-    }
-
+    .navbar-linha1 { padding: 16px; }
     .lista-cursos {
         margin-top: 32px;
         grid-template-columns: .60fr;
         justify-content: center;
     }
-
-}
-
-@media (max-width: 520px) {
-    .navbar-linha2 {
-        padding: 24px 10px 16px 10px;
-    }
-
-    .perfil-textos {
-        display: none;
-    }
-
-
-    .navbar-linha2 .menu {
-        gap: 10px;
-
-    }
 }
 
 @media (max-width: 480px) {
-    .navbar-linha2 .menu a {
-        font-size: .75rem;
-    }
-
     .lista-cursos {
         grid-template-columns: .85fr;
     }
@@ -608,7 +358,7 @@ header {
     }
 }
 
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
     .curso-card {
         width: 360px;
     }
