@@ -32,6 +32,29 @@ function criarCardCursoAcessado(curso) {
     return article;
 }
 
+function criarCardCursoDisponivel(curso) {
+    const article = document.createElement("article");
+    article.classList.add("trilha-card");
+
+    article.innerHTML = `
+        <div class="trilha-thumb">
+            <img src="${curso.imagem}" alt="Miniatura do curso">
+        </div>
+        <div class="trilha-info">
+            <h3 class="trilha-nome">${curso.nome}</h3>
+            <p class="trilha-meta">${curso.descricao}</p>
+            <div class="trilha-extra">
+                <span>Carga: <strong>${curso.cargaHoraria}</strong></span>
+                <span>Nível: <strong>${curso.nivel}</strong></span>
+                <button class="trilha-open"><img src="./assets/images/icon-play.svg" alt="">
+            </div>
+        </div>
+</button>
+    `;
+
+    return article;
+}
+
 function renderizarCursosAcessados(listaCursos) {
     const container = document.getElementById("listaCursosAcessados");
     container.innerHTML = "";
@@ -42,4 +65,16 @@ function renderizarCursosAcessados(listaCursos) {
     });
 }
 
+function renderizarCursosDisponiveis(listaCursos) {
+    const container = document.getElementById("listaCursosDisponiveis");
+    container.innerHTML = "";
+
+    listaCursos.forEach(curso => {
+        const card = criarCardCursoDisponivel(curso);
+        container.appendChild(card);
+    });
+}
+
 renderizarCursosAcessados(cursosEmAndamento);
+renderizarCursosDisponiveis(cursosDisponiveis);
+
