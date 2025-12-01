@@ -85,7 +85,7 @@ body {
 /* Primeira linha 1 */
 .navbar-linha1 {
     background-color: var(--cor-texto-azul-2);
-    padding: 20px 40px;
+    padding: 16px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -285,5 +285,14 @@ body {
         .navbar-linha2 .menu a {
             font-size: .75rem;
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .linha1-esquerda .logo {
+        width: 75px;
+    }
+    .linha1-esquerda h1  {
+        font-size: 1.5rem;
     }
 }
