@@ -63,7 +63,6 @@ function criarCardCursoDisponivel(curso) {
 
 function renderizarCursosAcessados(lista) {
     const container = document.getElementById("listaCursosAcessados");
-    if (!container) return console.error("Elemento #listaCursosAcessados não encontrado!");
     
     container.innerHTML = "";
     lista.forEach(curso => container.appendChild(criarCardCursoAcessado(curso)));
@@ -71,7 +70,6 @@ function renderizarCursosAcessados(lista) {
 
 function renderizarCursosDisponiveis(lista) {
     const container = document.getElementById("listaCursosDisponiveis");
-    if (!container) return console.error("Elemento #listaCursosDisponiveis não encontrado!");
 
     container.innerHTML = "";
     lista.forEach(curso => container.appendChild(criarCardCursoDisponivel(curso)));
