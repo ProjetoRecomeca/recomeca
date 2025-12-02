@@ -1,4 +1,5 @@
 .sobre-nos {
+    background-color: var(--cor-branca);
     padding: 48px;
     display: flex;
     gap: 32px;
@@ -6,12 +7,15 @@
 
 .sobre-nos .imagem {
     width: 100%;
-    height: 493px;
 
     background-color: #ddd;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    & img {
+        object-fit: cover;
+    }
 
 }
 
