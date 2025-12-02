@@ -8,11 +8,11 @@ function criarCardCursoAcessado(curso) {
 
     article.innerHTML = `
         <div class="curso-thumb" 
-             style="
+            style="
                 background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('${curso.imagem}');
                 background-size: cover;
                 background-position: center;
-             ">            
+            ">
             <div class="curso-progress">
                 <span class="curso-progress-text">${progresso}%</span>
                 <div class="curso-progress-bar">
@@ -32,6 +32,7 @@ function criarCardCursoAcessado(curso) {
     return article;
 }
 
+
 function criarCardCursoDisponivel(curso) {
     const article = document.createElement("article");
     article.classList.add("trilha-card");
@@ -40,41 +41,44 @@ function criarCardCursoDisponivel(curso) {
         <div class="trilha-thumb">
             <img src="${curso.imagem}" alt="Miniatura do curso">
         </div>
+
         <div class="trilha-info">
             <h3 class="trilha-nome">${curso.nome}</h3>
             <p class="trilha-meta">${curso.descricao}</p>
+
             <div class="trilha-extra">
                 <span>Carga: <strong>${curso.cargaHoraria}</strong></span>
                 <span>Nível: <strong>${curso.nivel}</strong></span>
-                <button class="trilha-open"><img src="./assets/images/icon-play.svg" alt="">
+
+                <button class="trilha-open">
+                    <img src="./assets/images/icon-play.svg" alt="">
+                </button>
             </div>
         </div>
-</button>
     `;
 
     return article;
 }
 
-function renderizarCursosAcessados(listaCursos) {
+
+function renderizarCursosAcessados(lista) {
     const container = document.getElementById("listaCursosAcessados");
+    if (!container) return console.error("Elemento #listaCursosAcessados não encontrado!");
+    
     container.innerHTML = "";
-
-    listaCursos.forEach(curso => {
-        const card = criarCardCursoAcessado(curso);
-        container.appendChild(card);
-    });
+    lista.forEach(curso => container.appendChild(criarCardCursoAcessado(curso)));
 }
 
-function renderizarCursosDisponiveis(listaCursos) {
+function renderizarCursosDisponiveis(lista) {
     const container = document.getElementById("listaCursosDisponiveis");
-    container.innerHTML = "";
+    if (!container) return console.error("Elemento #listaCursosDisponiveis não encontrado!");
 
-    listaCursos.forEach(curso => {
-        const card = criarCardCursoDisponivel(curso);
-        container.appendChild(card);
-    });
+    container.innerHTML = "";
+    lista.forEach(curso => container.appendChild(criarCardCursoDisponivel(curso)));
 }
 
-renderizarCursosAcessados(cursosEmAndamento);
-renderizarCursosDisponiveis(cursosDisponiveis);
 
+document.addEventListener("DOMContentLoaded", () => {
+    renderizarCursosAcessados(cursosEmAndamento);
+    renderizarCursosDisponiveis(cursosDisponiveis);
+});
