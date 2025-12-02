@@ -105,7 +105,7 @@ body {
 
 .trilhas-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 380px));
+    grid-template-columns: repeat(auto-fit, minmax(0, 390px));
     gap: 12px;
 }
 
@@ -121,8 +121,8 @@ body {
 }
 
 .trilha-thumb {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     overflow: hidden;
     background-color: #333;
@@ -137,7 +137,9 @@ body {
 .trilha-info {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
+    letter-spacing: 1.07px;
+
 }
 
 .trilha-nome {
@@ -148,10 +150,9 @@ body {
 
 .trilha-meta {
 
-    text-align: justify;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--cor-texto-azul);
-    line-height: 1.2;
+    line-height: 16px;
 }
 
 .trilha-extra {
@@ -166,6 +167,7 @@ body {
     border: none;
     background: transparent;
     cursor: pointer;
+    margin-left: auto;
 
     & img {
         width: 35px;
@@ -180,7 +182,7 @@ body {
     }
 
     .trilhas-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(0, 360px));
     }
 }
 
@@ -193,4 +195,24 @@ body {
     .trilhas-grid {
         grid-template-columns: 1fr;
     }
+
+    .trilhas-explorar {
+        padding: 0;
+    }
+
+    .trilha-card {
+        padding: 8px;
+        gap: 12px;
+    }
+
+    .trilha-thumb  {
+        width: 55px;
+        height: 55px;
+    }
+
+    .trilha-meta,
+    .trilha-extra {
+        font-size: 0.7rem;
+    }
+    
 }
