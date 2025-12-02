@@ -1,287 +1,137 @@
+/* ===== Seção Sobre Nós ===== */
+.sobre-nos {
+    display: flex;
+    gap: 32px;
+    padding: 48px;
+    flex-wrap: wrap;
+    background-color: var(--fundo-1);
+    font-family: var(--texto-inter);
+}
+
+.sobre-nos .imagem {
+    flex: 1 1 300px;
+}
+
+.sobre-nos .imagem img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.sobre-nos-texto {
+    flex: 2 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sobre-nos-texto h2 {
+    font-size: 2rem;
+    font-family: var(--texto-istok-web);
+    font-weight: 700;
+    color: var(--cor-texto-azul-2);
+}
+
+.sobre-nos-texto p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--cor-texto-azul-2);
+    text-align: justify;
+}
+
+/* ===== Seção Nossos Serviços ===== */
 .nossos-servicos {
     padding: 48px;
     background-color: var(--fundo-2);
-
     display: flex;
     flex-direction: column;
     gap: 48px;
+    font-family: var(--texto-inter);
 }
 
 .nossos-servicos h2 {
     color: var(--cor-texto-azul-2);
-
     font-size: 2rem;
     font-family: var(--texto-istok-web);
     font-weight: 700;
-
     align-self: center;
-
 }
 
-.nossos-servicos .trilhas-de-conhecimento {
-    padding: 24px 32px;
-    background-color: var(--cor-branca);
-    box-shadow: .5px .5px 2px;
-    border-radius: 24px;
+/* ===== Cards de Serviços ===== */
+.servicos-cards {
     display: flex;
-    gap: 48px;
-
-}
-
-.nossos-servicos .trilhas-de-conhecimento .trilhas-imagem {
-    width: 100%;
-    background-color: #ddd;
-    display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
     justify-content: center;
-
 }
 
-.nossos-servicos .trilhas-de-conhecimento .trilhas-textos {
-    font-family: var(--texto-inter);
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.nossos-servicos .trilhas-de-conhecimento .trilhas-textos h3 {
-    color: var(--cor-texto-verde);
-
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 1.27px;
-    text-align: center;
-
-    align-self: center;
-}
-
-.nossos-servicos .trilhas-de-conhecimento .trilhas-textos p {
-    color: var(--cor-texto-azul-2);
-
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: 1.07px;
-
-}
-
-.nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista .trilhas-lista-item {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
-
-.nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista .trilhas-lista-item .trilhas-item-lista-texto {
-    display: flex;
-    flex-direction: column;
-}
-
-.nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista .trilhas-lista-item .trilhas-item-lista-texto h4 {
-    color: var(--cor-texto-verde);
-    font-size: 1.25rem;
-    letter-spacing: 1.7px;
-    line-height: 24px;
-    font-weight: 600;
-}
-
-.nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista .trilhas-lista-item .trilhas-item-lista-texto li {
-    list-style-type: square;
-    color: var(--cor-texto-azul-2);
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 1.07px;
-    line-height: 24px;
-    margin: 12px;
-}
-
-/* Apoio Psicológico */
-.apoio-psicologico {
-    padding: 24px 32px;
+.servico-card {
     background-color: var(--cor-branca);
-    font-family: var(--texto-inter);
-    border-radius: 24px;
-    box-shadow: .5px .5px 2px;
-
-
-    display: flex;
-    justify-content: space-between;
-    gap: 48px;
-}
-
-.apoio-psicologico-textos {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.apoio-psicologico-imagem {
-    width: 25%;
-    background-color: #ddd;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.apoio-psicologico h3 {
-    color: var(--cor-texto-verde);
-    font-size: 1.5rem;
-    letter-spacing: 1.27px;
-    font-weight: 600;
-    align-self: center;
-}
-
-.apoio-psicologico p,
-.apoio-psicologico li {
-    color: var(--cor-texto-azul-2);
-    font-size: 1rem;
-    line-height: 24px;
-    letter-spacing: 1.07px;
-}
-
-.apoio-psicologico ul {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.apoio-psicologico ul li {
-    margin-left: 32px;
-    list-style-type: square;
-}
-
-/* Workshops e Carreiras */
-
-.workshops-carreiras {
-    padding: 24px 32px;
-    background-color: var(--cor-branca);
-    font-family: var(--texto-inter);
-    border-radius: 24px;
-    box-shadow: .5px .5px 2px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.workshops-carreiras h3 {
-    color: var(--cor-texto-verde);
-    font-size: 1.5rem;
-    letter-spacing: 1.27px;
-    font-weight: 600;
-    align-self: center;
-    text-align: center;
-    line-height: 36px;
-}
-
-.workshops-carreiras p {
-    font-size: 1rem;
-    letter-spacing: 1.07px;
-    line-height: 24px;
-}
-.workshops-carreiras .workshops-carreiras-paragrafo {
-    color: var(--cor-texto-azul-2);
-}
-
-.workshops-carreiras .workshops-carreiras-servicos {
-    padding: 12px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-}
-
-.workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa {
     padding: 24px;
-    border-radius: 16px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa h4 {
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-.workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa .workshops-carreiras-caixa-texto {
+    border-radius: 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    flex: 1 1 300px;
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-
-
 }
 
-.workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa:nth-child(1) {
-    background-color: var(--fundo-4);
+.servico-card h3 {
+    color: var(--cor-texto-verde);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
 }
 
-.workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa:last-child {
-    background-color: var(--fundo-6);
+.servico-card p {
+    color: var(--cor-texto-azul-2);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
 }
 
-/* ------- Reponsividade ------- */
+.btn-cadastrar-container {
+    display: flex;
+    justify-content: flex-end;
+}
 
-@media (max-width:768px) {
-    .nossos-servicos {
+.btn-cadastrar {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--cor-texto-verde);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-cadastrar:hover {
+    background-color: rgb(41, 71, 187);
+}
+
+@media (max-width: 768px) {
+    .sobre-nos {
         padding: 32px 16px;
+        flex-direction: column;
         gap: 24px;
     }
 
-    .nossos-servicos .trilhas-de-conhecimento {
-        padding: 20px 24px
+    .servicos-cards {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
     }
 
-    .nossos-servicos .trilhas-de-conhecimento .trilhas-textos p,
-    .nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista .trilhas-lista-item .trilhas-item-lista-texto li {
-        text-align: justify;
+    .btn-cadastrar-container {
+        justify-content: center;
     }
 
-
-
-    .nossos-servicos .trilhas-de-conhecimento .trilhas-textos .trilhas-lista .trilhas-lista-item img {
-        display: none;
+    .servico-card h3 {
+        font-size: 1.25rem;
     }
 
-
-
-    .nossos-servicos .trilhas-de-conhecimento .trilhas-imagem {
-        display: none;
+    .servico-card p {
+        font-size: 0.95rem;
     }
-
-    /* Apoio Psicologico */
-    .apoio-psicologico-imagem {
-        display: none;
-    }
-
-    /* Workshops e Carreiras */
-    .workshops-carreiras {
-        padding: 20px 16px;
-    }
-
-    .workshops-carreiras .workshops-carreiras-servicos {
-        padding: 0px;
-    }
-
-    .workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa {
-        padding: 16px;
-    }
-
-    .workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa .workshops-carreiras-caixa-texto h4 {
-        font-size: 1rem;
-    }
-
-    .workshops-carreiras .workshops-carreiras-servicos .workshops-carreiras-caixa .workshops-carreiras-caixa-texto p {
-        font-size: .75rem;
-        line-height: 20px;
-    }
-
-
 }

@@ -1,0 +1,87 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ddd;
+    margin-bottom: 24px;
+}
+
+.banner-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 24px;
+    color: var(--cor-branca);
+    gap: 6px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.banner-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+    z-index: 0;
+}
+
+.banner-slide h2,
+.banner-slide p,
+.banner-slide button {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-slide.active {
+    opacity: 1;
+}
+
+.banner-slide h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.banner-slide p {
+    font-size: .95rem;
+}
+
+.banner-slide button {
+    margin-top: 6px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--cor-branca);
+    color: var(--cor-texto-azul-2);
+    font-size: .85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.paginacao {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 2;
+}
+
+.paginacao .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.paginacao .dot.active {
+    background-color: #fff;
+}

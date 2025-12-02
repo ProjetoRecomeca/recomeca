@@ -1,0 +1,213 @@
+@import url('../../styles/components.css');
+
+body {
+    font-family: var(--texto-inter);
+    background-color: #e6edf4;
+    color: #1b1b1b;
+}
+
+
+.barra-superior {
+    width: 100%;
+    background-color: #ffd7a3;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.menu-superior {
+    display: flex;
+    gap: 20px;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: #333;
+}
+
+.link-menu:hover {
+    text-decoration: underline;
+}
+
+.botao-trilha {
+    padding: 6px 16px;
+    border-radius: 9999px;
+    border: 1px solid #333;
+    background-color: transparent;
+    font-size: 13px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+.pagina {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    background-color: #f5f7fb;
+}
+
+
+.sessao-hero {
+    position: relative;
+    height: 260px;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.fundo-hero {
+    position: absolute;
+    inset: 0;
+    background-image: url("assets/images/apoiopsicologico.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+}
+
+.sessao-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 39, 71, 0.78);
+}
+
+.conteudo-hero {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.titulo-hero {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.texto-hero {
+    font-size: 16px;
+    max-width: 520px;
+    margin-bottom: 24px;
+}
+
+
+.botao-primario {
+    display: inline-block;
+    padding: 10px 26px;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    color: #00375e;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+}
+
+.botao-primario:hover {
+    filter: brightness(0.95);
+}
+
+
+.sessao-servicos {
+    background-color: #00345e;
+    padding: 32px 40px 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.titulo-servicos {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.lista-cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.cartao-servico {
+    background-color: #33667f;
+    border-radius: 8px;
+    padding: 24px 16px;
+    width: 250px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icone-servico {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 16px;
+    
+}
+
+.titulo-cartao {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.texto-cartao {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* SESSÃO MENSAGEM FINAL */
+
+.sessao-mensagem {
+    background-color: #ffffff;
+    padding: 32px 40px 40px;
+    text-align: center;
+}
+
+.titulo-mensagem {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-mensagem {
+    font-size: 13px;
+    color: #f09832;
+    margin-bottom: 10px;
+}
+
+.texto-mensagem {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.botao-mensagem {
+    font-size: 13px;
+}
+
+
+@media (max-width: 700px) {
+    .barra-superior {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .sessao-hero {
+        height: auto;
+    }
+
+    .conteudo-hero {
+        padding: 40px 20px;
+    }
+
+    .sessao-servicos,
+    .sessao-mensagem {
+        padding: 24px 20px 32px;
+    }
+}

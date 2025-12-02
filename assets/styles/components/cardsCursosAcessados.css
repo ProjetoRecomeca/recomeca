@@ -1,0 +1,145 @@
+.lista-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+}
+
+.curso-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #d0d0d0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 330px;
+}
+
+.cursos-titulo {
+    font-size: 1.5rem;
+    margin: 12px 12px 12px 0;
+    font-weight: 700;
+    letter-spacing: 1.07px;
+}
+
+.curso-thumb {
+    background-color: #787878;
+    height: 180px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.curso-thumb::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .35);
+}
+
+.curso-progress {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 8px;
+    z-index: 2;
+    font-size: 0.7rem;
+    color: #ffffff;
+}
+
+.curso-progress-text {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.curso-progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #e0e0e0;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.curso-progress-fill {
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 999px;
+}
+
+.curso-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.curso-nome {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #00424f;
+}
+
+.curso-nivel-label {
+    margin-top: 4px;
+    margin-left: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.curso-descricao {
+    font-size: 0.75rem;
+    color: #052950;
+    line-height: 16px;
+    margin-top: 8px;
+}
+
+.curso-btn {
+    margin-top: 12px;
+    align-self: flex-end;
+    padding: 4px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--amarelo);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.curso-btn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+    .lista-cursos {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .lista-cursos {
+        justify-content: center;
+        margin-top: 24px;
+    }
+
+    .curso-card {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lista-cursos {
+        justify-content: center;
+    }
+
+    .curso-card {
+        max-width: 260px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .lista-cursos {
+        justify-content: flex-start;
+        gap: 32px;
+    }
+}
