@@ -1,8 +1,7 @@
 @import url('../../styles/components.css');
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
+    font-family: var(--texto-inter);
     background-color: #f3f4f6;
     color: #111827;
 }
@@ -15,7 +14,7 @@ body {
 }
 
 .topo-conteudo {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 10px 24px;
     display: flex;
@@ -98,7 +97,7 @@ body {
 
 
 .pagina {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto 40px;
     background-color: #ffffff;
 }
@@ -215,7 +214,7 @@ body {
 }
 
 .fundo-eventos {
-    background: #f6921e;          /* laranja */
+    background: #f6921e;
     border-radius: 4px;
     padding: 12px 10px;
 }
@@ -305,10 +304,6 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-}
-
-.logo-rodape {
-    height: 36px;
 }
 
 .rodape-textos {

@@ -16,7 +16,6 @@ body {
 
 .trilhas-explorar {
     margin-top: 24px;
-    padding: 16px 24px 32px;
 }
 
 .trilhas-titulo {
@@ -91,6 +90,8 @@ body {
     background: transparent;
     font-size: 0.75rem;
     text-align: left;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
     cursor: pointer;
 }
 

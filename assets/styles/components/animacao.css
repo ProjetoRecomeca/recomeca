@@ -1,0 +1,25 @@
+.animar {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all .7s ease;
+}
+
+.animar.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.animar-item {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: surgir-item 0.7s forwards ease-out;
+}
+
+/* Keyframe */
+@keyframes surgir-item {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
