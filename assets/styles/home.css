@@ -1,12 +1,26 @@
 .home {
-    padding: 147px 0;
-    background-color: var(--fundo-1);
-
+    height: 700px;
+    color: var(--cor-branca);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 8px;
+    z-index: 1;
+    position: relative;
+    opacity: 0;
+    animation: aparecer-container 0.8s forwards ease-out;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('https://wallpapers.com/images/hd/construction-project-management-team-kfjg4sale9nphfar.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
 }
 
 .home h2 {
@@ -14,43 +28,76 @@
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 1.2px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: surgir 0.9s forwards ease-out;
+    animation-delay: 0.2s;
 }
 
 .home p {
     font-family: var(--texto-inter);
     letter-spacing: 1.2px;
     font-size: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: surgir 0.9s forwards ease-out;
+    animation-delay: 0.4s;
 }
 
 .home .botoes {
     margin-top: 40px;
     display: flex;
     gap: 32px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: surgir 0.9s forwards ease-out;
+    animation-delay: 0.6s;
 }
 
 .home .botoes .botao {
-    background-color: var(--fundo-5);
+    padding: 20px 28px;
+    background-color: transparent;
     color: var(--cor-branca);
-    padding: 24px 16px;
-    font-size: .75rem;
-
+    border: 1px solid var(--cor-branca);
+    font-size: .85rem;
+    text-transform: uppercase;
     font-family: var(--texto-montserrat);
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1.17px;
-    border-radius: 8px;
-    border: none;
+    border-radius: 4px;
+    text-align: center;
     cursor: pointer;
+}
+
+.home .botoes .botao:nth-child(2) {
+    background-color: #0083c9d7;
+    border: none;
+
+}
+
+@keyframes surgir {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecer-container {
+    to {
+        opacity: 1;
+    }
 }
 
 @media (max-width:768px) {
     .home {
-        padding: 81.5px 0;
+        padding: 81px 0;
     }
 
     .home h2 {
         font-size: 2rem;
     }
-    .home .botoes  {
+
+    .home .botoes {
         margin-top: 16px;
         flex-direction: column;
         gap: 16px;
