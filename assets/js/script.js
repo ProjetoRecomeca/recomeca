@@ -2,7 +2,6 @@ const header = document.getElementById('header');
 const rodape = document.getElementById('rodape');
 
 function criarCabecalho(header) {
-    console.log(header)
     if (header.classList.contains('cabecalho')) {
         header.innerHTML = `
                 <div>
@@ -33,10 +32,10 @@ function criarCabecalho(header) {
         <div class="linha1-direita">
             <div class="perfil-textos">
                 <span class="user-name">Nome do Usuário</span>
-                <a href="#" class="config">Configuração ⚙</a>
+                <a href="#" class="config" id="pessoabtn">SAIR <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/c4/logout-31dva2zl3l9ao92pwnmgnt.png/logout-6bjs3s3fnciv7c0ye52y3l.png?_a=DATAg1AAZAA0" width="15"></a>
             </div>
 
-            <div class="perfil-foto" id="pessoabtn">
+            <div class="perfil-foto">
                <img src="./assets/images/perfil.jpg" alt="Foto do perfil">
             </div>
         </div>
@@ -116,7 +115,15 @@ criarRodape(rodape);
 
 const imgPesosa = document.getElementById("pessoabtn")
 
-imgPesosa.addEventListener('click', () => {
-    alert("Você clicou na imagem")
-})
+
+if (imgPesosa) {
+
+    imgPesosa.addEventListener('click', () => {
+       const resp = confirm("Tem certeza que deseja sair da página?")
+
+       if(resp) {
+        window.location.assign('index.html')
+       }
+    }) 
+}
 
