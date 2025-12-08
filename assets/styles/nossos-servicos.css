@@ -1,47 +1,6 @@
-/* ===== Seção Sobre Nós ===== */
-.sobre-nos {
-    display: flex;
-    gap: 32px;
-    padding: 48px;
-    flex-wrap: wrap;
-    background-color: var(--fundo-1);
-    font-family: var(--texto-inter);
-}
-
-.sobre-nos .imagem {
-    flex: 1 1 300px;
-}
-
-.sobre-nos .imagem img {
-    width: 100%;
-    border-radius: 16px;
-}
-
-.sobre-nos-texto {
-    flex: 2 1 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.sobre-nos-texto h2 {
-    font-size: 2rem;
-    font-family: var(--texto-istok-web);
-    font-weight: 700;
-    color: var(--cor-texto-azul-2);
-}
-
-.sobre-nos-texto p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: var(--cor-texto-azul-2);
-    text-align: justify;
-}
-
-/* ===== Seção Nossos Serviços ===== */
 .nossos-servicos {
     padding: 48px;
-    background-color: var(--fundo-2);
+    background-color: var(--cor-texto-azul);
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -49,14 +8,14 @@
 }
 
 .nossos-servicos h2 {
-    color: var(--cor-texto-azul-2);
+    color: var(--cor-branca);
     font-size: 2rem;
     font-family: var(--texto-istok-web);
     font-weight: 700;
     align-self: center;
 }
 
-/* ===== Cards de Serviços ===== */
+/* Container dos cards */
 .servicos-cards {
     display: flex;
     flex-wrap: wrap;
@@ -66,55 +25,105 @@
 
 .servico-card {
     background-color: var(--cor-branca);
-    padding: 24px;
-    border-radius: 24px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    flex: 1 1 300px;
-    max-width: 360px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.15);
+    border-radius: 16px;
+    padding: 32px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
+    flex-grow: 1;
+    max-width: 300px;
+    flex-basis: 200px;
+
+    opacity: 0;
+    transform: translateY(40px);
 }
 
+.servico-card.animado {
+    animation: surgir 0.9s forwards ease-out;
+}
+
+.servico-card:nth-of-type(1).animado {
+    animation-delay: 0.1s;
+}
+
+.servico-card:nth-of-type(2) {
+    background-color: var(--cor-texto-azul);
+    border: .25px solid var(--fundo-3);
+}
+
+.servico-card:nth-of-type(2) img {
+    filter: invert(1);
+}
+
+.servico-card:nth-of-type(2) h3,
+.servico-card:nth-of-type(2) p {
+    color: var(--cor-branca);
+}
+
+.servico-card:nth-of-type(2).animado {
+    animation-delay: 0.3s;
+}
+
+.servico-card:nth-of-type(3).animado {
+    animation-delay: 0.5s;
+}
+
+/* Keyframe */
+@keyframes surgir {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Conteúdo interno */
 .servico-card h3 {
     color: var(--cor-texto-verde);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
 }
 
 .servico-card p {
     color: var(--cor-texto-azul-2);
     font-size: 1rem;
+    margin-top: 10%;
     line-height: 1.5rem;
-    text-align: justify;
+    letter-spacing: 1.7px;
+    text-align: center;
 }
 
+/* Botão */
 .btn-cadastrar-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .btn-cadastrar {
-    padding: 12px 28px;
+    padding: 16px 24px;
     border: none;
     border-radius: 12px;
     background-color: var(--cor-texto-verde);
     color: white;
-    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.03px;
+    font-weight: 300;
     cursor: pointer;
     transition: background 0.3s;
+    text-decoration: none;
 }
 
 .btn-cadastrar:hover {
     background-color: rgb(41, 71, 187);
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
-    .sobre-nos {
-        padding: 32px 16px;
-        flex-direction: column;
-        gap: 24px;
+    .nossos-servicos {
+        padding: 40px 20px;
     }
 
     .servicos-cards {
@@ -123,15 +132,14 @@
         align-items: center;
     }
 
-    .btn-cadastrar-container {
-        justify-content: center;
-    }
-
     .servico-card h3 {
         font-size: 1.25rem;
     }
 
     .servico-card p {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
+        line-height: 20px;
     }
 }
+
+
