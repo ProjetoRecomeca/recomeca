@@ -135,6 +135,23 @@
 
     <script src="./assets/js/script.js"></script>
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const secoes = document.querySelectorAll(".animar");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("ativo");
+
+                        const cards = entry.target.querySelectorAll(".servico-card");
+
+                        cards.forEach(card => card.classList.add("animado"));
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            secoes.forEach(secao => observer.observe(secao));
+        });
     </script>
 </body>
 
