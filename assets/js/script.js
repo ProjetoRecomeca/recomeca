@@ -12,10 +12,10 @@ function criarCabecalho(header) {
                 </div>
 
                 <nav class="navegacao">
-                    <a href="">Home</a>
-                    <a href="">Sobre Nós</a>
-                    <a href="">Nossos Serviços</a>
-                    <a href="">Seja um Voluntário</a>
+                    <a href="#home">Home</a>
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="#nossos-servicos">Nossos Serviços</a>
+                    <a href="#voluntarios">Seja um Voluntário</a>
                     <a href="./cadastro.html" class="amarelo">Garanta sua Jornada</a>
                 </nav>
             `;

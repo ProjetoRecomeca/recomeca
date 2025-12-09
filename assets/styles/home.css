@@ -68,11 +68,22 @@
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    transition: .7s ease-in-out;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
 }
 
 .home .botoes .botao:nth-child(2) {
     background-color: #0083c9d7;
     border: none;
+
+    &:hover {
+        background-color: #25b3ff;
+        color: #fff;
+    }
 
 }
 

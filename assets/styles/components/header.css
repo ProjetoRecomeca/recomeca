@@ -75,9 +75,18 @@ body {
     color: var(--cor-branca);
     font-size: 1rem;
     letter-spacing: 1.27px;
+    transition: .3s ease-in;
+
+    &:hover {
+        background-color: var(--cor-texto-verde);
+    }
 
     &.amarelo {
         background-color: var(--amarelo);
+
+        &:hover {
+
+        }
     }
 }
 
