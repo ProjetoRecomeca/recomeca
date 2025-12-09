@@ -83,10 +83,6 @@ body {
 
     &.amarelo {
         background-color: var(--amarelo);
-
-        &:hover {
-
-        }
     }
 }
 
@@ -314,12 +310,41 @@ body {
     }
 
     @media (max-width: 520px) {
-        .navbar-linha2 {
-            padding: 24px 10px 16px 10px;
+        .navbar-linha1 {
+            padding: 12px;
         }
 
-        .perfil-textos {
-            display: none;
+        .navbar-linha2 {
+            padding: 16px 10px;
+        }
+
+        .linha1-esquerda {
+            gap: 8px;
+        }
+
+        .linha1-esquerda .logo {
+            width: 32px;
+        }
+
+        .perfil-foto {
+            width: 36px;
+            height: 36px;
+        }
+
+        .linha1-esquerda h1 {
+            font-size: .77rem;
+        }
+
+        .linha1-direita {
+            gap: 8px;
+        }
+
+        .perfil-textos .config {
+            font-size: .53rem;
+        }
+        
+        .perfil-textos .user-name {
+            font-size: .67rem;
         }
 
         .navbar-linha2 .menu {

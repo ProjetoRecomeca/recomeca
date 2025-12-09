@@ -3,7 +3,7 @@
 
 header {
     display: flex;
-    padding: 42px;
+    padding: 40px;
 }
 
 header img:hover {
@@ -17,6 +17,7 @@ main {
     align-items: center;
     justify-content: center;
     font-family: var(--texto-inter);
+    margin-bottom: 24px;
 }
 
 /* Container geral */
@@ -177,6 +178,10 @@ main {
         font-size: 90%;
     }
 
+    header {
+        padding: 24px;
+    }
+
     .cadastro-titulo {
         font-size: 1.3rem;
     }
@@ -233,6 +238,6 @@ main {
 
 @media (max-width: 450px) {
     .container-cadastro {
-        width: 85vw;
+        width: 80vw;
     }
 }
