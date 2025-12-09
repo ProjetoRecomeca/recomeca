@@ -43,7 +43,7 @@ body {
 
 
 .pagina {
-    max-width: 1000px;
+    max-width: 1360px;
     margin: 0 auto 40px;
     background-color: #f5f7fb;
 }
@@ -51,24 +51,28 @@ body {
 
 .sessao-hero {
     position: relative;
-    height: 260px;
+    height: 460px;
     overflow: hidden;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url('../../images/terapia-grupo.png');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
 }
 
-.fundo-hero {
-    position: absolute;
-    inset: 0;
-    background-image: url("assets/images/apoiopsicologico.jpg");
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.6);
-}
+
 
 .sessao-hero::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(5, 39, 71, 0.78);
+    background: rgba(5, 39, 71, 0.5);
 }
 
 .conteudo-hero {
@@ -101,22 +105,22 @@ body {
     display: inline-block;
     padding: 10px 26px;
     border-radius: 9999px;
-    background-color: #ffffff;
-    color: #00375e;
+    background-color: #00375e;
+    color: #ffffff;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     border: none;
 }
 
 .botao-primario:hover {
-    filter: brightness(0.95);
+    filter: brightness(0.97);
 }
 
 
 .sessao-servicos {
     background-color: #00345e;
-    padding: 32px 40px 40px;
+    padding: 36px;
     color: #ffffff;
     text-align: center;
 }
@@ -137,27 +141,27 @@ body {
     background-color: #33667f;
     border-radius: 8px;
     padding: 24px 16px;
-    width: 250px;
-    max-width: 100%;
+    width: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .icone-servico {
-    width: 70px;
-    height: 70px;
+    width: 77px;
+    height: 77px;
     margin-bottom: 16px;
+    filter: invert(1) brightness(85%);
     
 }
 
 .titulo-cartao {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .texto-cartao {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.4;
 }
 
@@ -170,23 +174,23 @@ body {
 }
 
 .titulo-mensagem {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .subtitulo-mensagem {
-    font-size: 13px;
+    font-size: 16px;
     color: #f09832;
     margin-bottom: 10px;
 }
 
 .texto-mensagem {
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
 .botao-mensagem {
-    font-size: 13px;
+    font-size: 16px;
 }
 
 
