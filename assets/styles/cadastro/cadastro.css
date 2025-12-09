@@ -1,6 +1,14 @@
-
-@import url('../reset.css');
 @import url('../components.css');
+
+
+header {
+    display: flex;
+    padding: 42px;
+}
+
+header img:hover {
+    filter: invert(1);
+}
 
 /* Layout principal */
 main {
