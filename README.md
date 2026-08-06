@@ -74,9 +74,9 @@ Antes de começar, você vai precisar ter instalado:
 
 ## Documentação
 
-- 📄 [Documentação do Projeto]( #https://canva.link/yo1dg6q06bleo9t ) — visão geral, contexto, princípios e identidade visual
-- ♿ [Apresentação]( #https://canva.link/dgt3xesbj299sjp )
-- 🖼️ [Protótipo / Design (Figma)]( #https://www.figma.com/design/N5MAU2meGPDyvIACt1dHL2/Projeto-Recome%C3%A7a?node-id=0-1&t=tPpVmFy64wufc5jG-1 )
+- 📄 [Documentação do Projeto](https://canva.link/yo1dg6q06bleo9t) — visão geral, contexto, princípios e identidade visual
+- ♿ [Apresentação](https://canva.link/dgt3xesbj299sjp)
+- 🖼️ [Protótipo / Design (Figma)](https://www.figma.com/design/N5MAU2meGPDyvIACt1dHL2/Projeto-Recome%C3%A7a?node-id=0-1&t=tPpVmFy64wufc5jG-1)
 
 ---
 
